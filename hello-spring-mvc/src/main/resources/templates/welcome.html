@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
 <title>Hello MVC</title>
+
+<link rel="stylesheet" th:href="@{/resorces/semantic-ui/semantic.min.css}" />
+<script th:src="@{/resorces/jquery/jquery.min.js}"></script>
+<script th:src="@{/resorces/semantic-ui/semantic.min.js}"></script>
 </head>
 <body>
-	<h1>Hello MVC</h1>
+
+	<nav class="ui pointing red inverted secondary menu">
+	<div class="ui container">
+		<a th:href="@{/}" class="item active">
+		<i class="home icon"></i>Home
+		</a>
+	</div>
+	
+	</nav>
+	<div class="ui container">
+		<h1>Hello MVC</h1>
+	</div>
+	
 </body>
 </html>
